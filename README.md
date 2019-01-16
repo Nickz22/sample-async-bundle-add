@@ -7,7 +7,7 @@ You'll need to change the following:
 <ol>
   <li><b>quoteId</b> value in cpqApiTest</li>
   <li><b>priceBookId</b> in cpqApiTest</li>
-<ol>
+</ol>
 
 
 To run:, Execute the following Apex Code anonymously:
