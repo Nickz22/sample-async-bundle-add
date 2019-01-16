@@ -5,6 +5,6 @@ Clone this repo to try async addition of product bundles to CPQ.
 You'll need to change the following:
 
 <ol>
-  <li>quoteId value in cpqApiTest</li>
-  <li>priceBookId in cpqApiTest</li>
+  <li><b>quoteId</b> value in cpqApiTest</li>
+  <li><b>priceBookId</b> in cpqApiTest</li>
 <ol>
