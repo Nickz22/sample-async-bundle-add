@@ -8,3 +8,7 @@ You'll need to change the following:
   <li><b>quoteId</b> value in cpqApiTest</li>
   <li><b>priceBookId</b> in cpqApiTest</li>
 <ol>
+
+To run:, Execute the following Apex Code anonymously:
+
+~cpqApiTest.cpqApiTest();
