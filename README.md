@@ -10,6 +10,6 @@ You'll need to change the following:
 </ol>
 
 
-To run:, Execute the following Apex Code anonymously:
+To run, execute the following Apex Code anonymously:
 
 <b>cpqApiTest.cpqApiTest();</b>
