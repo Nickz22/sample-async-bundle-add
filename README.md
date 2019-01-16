@@ -1,6 +1,6 @@
 # sample-async-bundle-add
 
-Clone this repo to try async addition of product bundles to CPQ. 
+Clone this repo to try async addition of product bundles to Quote. 
 
 You'll need to change the following:
 
