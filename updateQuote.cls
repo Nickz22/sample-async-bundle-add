@@ -5,9 +5,9 @@ public with sharing class updateQuote implements Queueable{
     
     public updateQuote(String quoteId, String productModels) {
         
-        // create model from this Id
         this.quoteId = quoteId;
-        // finished productModel from createQuoteAsync.cls
+        
+        // complete ProductModel array from createQuoteAsync.cls
         this.productModels = productModels;
     }
 
@@ -16,7 +16,7 @@ public with sharing class updateQuote implements Queueable{
         // init quote model
         String quoteModel = SBQQ.ServiceRouter.read('SBQQ.QuoteAPI.QuoteReader', quoteId);
 
-        // update quote model
+        // update quote model with ProductModel array
         String updatedQuoteModel = SBQQ.ServiceRouter.load('SBQQ.QuoteAPI.QuoteProductAdder', null, '{"quote" : ' + quoteModel + ', "products" : [' + productModels + '], "ignoreCalculate" : true}');
 
          // save quote
