@@ -35,10 +35,10 @@ public with sharing class createQuoteAsync implements Queueable {
 
             if(i<batchSize){
 
-                // populate batch list
+                // put this product in batch list
                 thisBatch.add(remainingProducts.get(rP));
 
-                // to keep progress, remove index from remaining map
+                // to keep progress, remove this product from remaining map
                 remainingProducts.remove(rP);
 
                 // iterator
@@ -49,16 +49,17 @@ public with sharing class createQuoteAsync implements Queueable {
                 break;
             }
         }
-
+        
+        /*
+        * To populate productModels (for eventual use in Quote Model update), 
+         * loop through thisBatch to create and concatenate ProductModel for each entry.
+        */
+        
         // init loop var
         String productId;
         // set bundle currency
         String curr = 'USD';
 
-        /*
-        * To populate productModels (for eventual use in Quote Model update), 
-         * loop through thisBatch to create and concatenate ProductModel for each entry.
-        */
         for(Product2 p : thisBatch){
 
             // get Id for ProductModel
